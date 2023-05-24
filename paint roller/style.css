@@ -1,0 +1,94 @@
+body{
+    background-color: #ff00ff;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    rotate: -30deg;
+}
+
+.roller{
+    width: 150px;
+    height: 40px;
+    background-image: linear-gradient(to bottom, #ffff00 80% , #ffc04d 20%);
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    animation: roller 2s infinite;
+}
+
+@keyframes roller{
+    40% {
+        top: 175px;
+    }
+}
+
+.roller::before{
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 50px;
+    background-color: white;
+    border-radius: 10px;
+    top: 10px;
+    left: 15px;
+}
+
+.roller::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 50px;
+    border: 5px solid black;
+    border-left: none;
+    top: 20px;
+    left: 80px;
+    z-index: -1;
+}
+
+.handle{
+    width: 7px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    top: 75px;
+    left: 75px
+}
+.handle::after{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 50px;
+    background-color: black;
+    
+}
+
+.paint{
+    width: 145px;
+    height: 0;
+    background-color: #ffff00;
+    animation: paint 2s infinite;
+    z-index: -1;
+    position: absolute;
+    top: 22%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px;
+}
+
+@keyframes paint {
+    40%{
+        height: 150px;
+    }
+}
