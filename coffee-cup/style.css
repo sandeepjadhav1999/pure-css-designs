@@ -21,12 +21,12 @@ body{
 }
 
 .cup:hover{
-    animation: wave 3s alternate-reverse;
+    animation: wave 3s infinite;
 }
 
 @keyframes wave {
     0%{
-        background-position: -100px 50px;
+        background-position: 0px 50px;
     }
 
     
