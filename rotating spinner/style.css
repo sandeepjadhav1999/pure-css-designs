@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffc04d;
+}
+
+
+.container{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 700px;
+    width: 700px;
+    perspective: 1000px;
+}
+
+.container>div{
+    margin-bottom: 10px;
+    transform-style: preserve-3d;
+}
+
+.bar1,.bar2,.bar3,.bar4,.bar5{
+    border-top: 40px solid white;
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    animation: flip 2s infinite forwards;
+}
+
+@keyframes flip {
+    100%{
+        transform:rotateY(180deg);
+    }
+}
+.bar6,.bar7,.bar8,.bar9,.bar10{
+    border-bottom: 40px solid white;
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    animation: flip 2s infinite backwards;
+}
+
+@keyframes flip {
+    100%{
+        transform:rotateY(180deg);
+    }
+}
+
+.bar1{
+    border-top-color: #FF0000;
+    width: 350px;
+    margin: auto;
+}
+.bar2{
+    border-top-color: #FFA500;
+    width: 270px;
+    position: relative;
+    left :173px;
+    animation-delay: 0.2s;
+}
+.bar3{
+    border-top-color:  #FFFF00;
+    width: 180px;
+    position: relative;
+    left :219px;
+    animation-delay: 0.4s;
+}
+.bar4{
+    border-top-color:#00FF00;
+    width: 84px;
+    position: relative;
+    left :263px;
+    animation-delay: 0.6s;
+}
+.bar5{
+    border-top-color:#0000FF;
+    width: 0px;
+    position: relative;
+    left :304px;
+    animation-delay: 0.8s;
+}
+
+
+.bar10{
+    border-bottom-color:  #4B0082;
+    width: 350px;
+    margin: auto;
+    animation-delay: 1.6s;
+}
+.bar9{
+    border-bottom-color:  #EE82EE;
+    width: 270px;
+    position: relative;
+    left :173px;
+    animation-delay: 1.4s;
+}
+.bar8{
+    border-bottom-color:  #FFC0CB;
+    width: 180px;
+    position: relative;
+    left :219px;
+    animation-delay: 1.2s;
+}
+.bar7{
+    border-bottom-color:#00FFFF;
+    width: 84px;
+    position: relative;
+    left :263px;
+    animation-delay: 1s;
+}
+.bar6{
+    border-bottom-color: #800080;
+    width: 0px;
+    position: relative;
+    left :304px;
+    animation-delay: 0.8s;
+}
