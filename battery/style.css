@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#ffd700 ;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid white;
+    width: 250px;
+    height: 250px;
+}
+
+.battery{
+    width: 140px;
+    height: 50px;
+    border: 6px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.battery::after{
+    content: "";
+    width: 10px;
+    height: 30px;
+    border: 2px solid white;
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    left: 145px;
+    border-radius: 0px 6px 6px 0px;
+}
+
+.energy{
+    width: 0px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 3px;
+    animation: charge 2s infinite alternate-reverse;
+}
+
+@keyframes charge {
+    100%{
+        width: 130px;
+    }
+}
