@@ -16,8 +16,7 @@ body{
 }
 
 .container>div{
-    margin-bottom: 10px;
-    transform-style: preserve-3d;
+    margin-bottom: 10px;   
 }
 
 .bar1,.bar2,.bar3,.bar4,.bar5{
