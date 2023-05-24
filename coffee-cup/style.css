@@ -1,0 +1,49 @@
+body{
+    background-color: #ffd300;
+    margin: 0;
+    padding: 0;
+}
+
+.cup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border: 6px solid #ffd300;
+    transform: translate(-50%,-50%);
+    border-radius: 0px 0px 100px 100px;
+    box-shadow: 0px 0px 0px 9px white;
+    background-image: url(coffee.png);
+    background-repeat: repeat-x;
+    background-position: 0px 50px;
+    
+}
+
+.cup:hover{
+    animation: wave 3s alternate-reverse;
+}
+
+@keyframes wave {
+    0%{
+        background-position: -100px 50px;
+    }
+
+    
+    100%{
+        background-position: -600px 50px;
+        
+    }
+    
+}
+
+.handle{
+    width: 70px;
+    height: 100px;
+    border: 6px solid ffd300;
+    position: relative;
+    top: 2px;
+    left: 216px;
+    border-radius: 0px 18px 96px 0px;
+    box-shadow: 0px 0px 0px 9px white;
+}
