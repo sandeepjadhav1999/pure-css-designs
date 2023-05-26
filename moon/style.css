@@ -3,7 +3,6 @@ body{
     padding: 0;
     background-color:  #000033 ;
 }
-
 .container{
     width: 1200px;
     height: 500px;
@@ -14,17 +13,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 .orbit{
     width: 400px;
     height: 400px;
     border-radius: 50%;
     border: 2px solid white;
-    /* position: absolute;
-    top: 10%;
-    left: 10%; */
     animation: rotate 5s infinite;
 }
 
@@ -33,7 +27,6 @@ body{
         transform: rotate(360deg);
     }
 }
-
 .orbit::before{
     content: "";
     width: 80px;
@@ -44,8 +37,6 @@ body{
     top: 40px;
 
 }
-
-
 .moon{
     width: 200px;
     height: 200px;
@@ -57,7 +48,6 @@ body{
     transform: translate(-50%,-50%);
     box-shadow: 0px 0px 0px 15px #e0e0e07b, 0px 0px 0px 30px #e0e0e07b, 0px 0px 0px 40px #e0e0e07b;
 }
-
 .moon::before{
     content: "MO";
     color: white;
@@ -68,7 +58,6 @@ body{
     position: absolute;
     left: -490px;
 }
-
 .moon::after{
     content: "N";
     color: white;
@@ -79,7 +68,6 @@ body{
     position: absolute;
     left: 490px;
 }
-
 .sparkle{
     width: 20px;
     height: 20px;
@@ -89,7 +77,6 @@ body{
     top: 23%;
     left: 20%;
 }
-
 .sparkle::after{
     content: "";
     width: 15px;
